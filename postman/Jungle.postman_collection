@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "2fa1b28d-8345-4b85-a91c-999abb1893a4",
+		"name": "Jungle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/animal/total",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/animal/total",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"animal",
+						"total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/animal/name/Rabbit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/animal/name/Rabbit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"animal",
+						"name",
+						"Rabbit"
+					]
+				},
+				"description": "Aquí se busca a un animal por su nombre."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/animal/name/Snake",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/animal/name/Snake",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"animal",
+						"name",
+						"Snake"
+					]
+				},
+				"description": "Busqueda de otro animal por su nombre"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/food/name/vermin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/food/name/vermin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"food",
+						"name",
+						"vermin"
+					]
+				},
+				"description": "Busqueda de un animal por el alimento que consume."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/food/saveNewFood",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":6,\r\n    \"name\":\"fly\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/food/saveNewFood",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"food",
+						"saveNewFood"
+					]
+				},
+				"description": "Sirve para crear un nuevo tipo de alimento."
+			},
+			"response": []
+		}
+	]
+}
